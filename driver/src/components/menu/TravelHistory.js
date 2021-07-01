@@ -13,13 +13,13 @@ export default class TravelHistory extends Component {
                         justifyContent: 'space-between',
                         marginLeft: 10,
                         marginRight: 10,
+                        marginBottom: 5,
                         height: 50,
                     }}>
                 <View
                     style={{
                         height: 45,
                         width: 45,
-                        backgroundColor: 'grey',
                         alignItems: 'center',
                         justifyContent: 'center',
                     }}>
@@ -105,7 +105,6 @@ export default class TravelHistory extends Component {
                     style={{
                         height: 45,
                         width: 45,
-                        backgroundColor: 'grey',
                         alignItems: 'center',
                         justifyContent: 'center',
                     }}>
