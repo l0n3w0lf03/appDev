@@ -13,14 +13,15 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-nativ
 
 const Post = () => {
     //const post = props.post;
-    //const navigation = useNavigation();
+    const navigation = useNavigation();
     const [isModalVisible, setModalVisible] = useState(false);
     const toggleModal = () => {
         setModalVisible(!isModalVisible);
       };
 
   return (
-    <View
+    <Pressable
+        onPress={()=>navigation.navigate('PostDetails')}
         style={{
             height: 240,
             width: 150,
@@ -72,11 +73,12 @@ const Post = () => {
             <Entypo
                 name="location-pin"
                 size={24} color={'#8e2525'}
-                onPress={()=>console.warn('clicked')}
+                onPress={()=> navigation.navigate('PostLocation')}
                 style={{
                     marginHorizontal: 10,
                 }}
-                />
+            />
+
         </View>
         <View
             style={{
@@ -135,9 +137,9 @@ const Post = () => {
                 >
                     <View
                         style={{
-                            width: 300,
+                            width: wp('90%'),
                             height: 100,
-                            backgroundColor: '#707070',
+                            backgroundColor: '#f0f8ff',
                             borderRadius: 10,
                             borderWidth: 1,
                             top: 55,
@@ -147,7 +149,7 @@ const Post = () => {
                                 fontSize: 18,
                                 margin: 10,
                                 fontWeight: 'bold',
-                                color: 'white',
+                                color: 'black',
                             }}>
                             Are you sure to remove this from list?
                         </Text>
@@ -162,10 +164,10 @@ const Post = () => {
                                     height: 40,
                                     width: 60,
                                     backgroundColor: '#a7fc00',
-                                    borderRadius: 10,
+                                    borderRadius: 5,
                                     alignItems: 'center',
                                     justifyContent: 'center',
-                                    left: 220,
+                                    left: 240,
                                 }}>
                                 <Text
                                     style={{
@@ -181,7 +183,7 @@ const Post = () => {
             </Pressable>
         </View>
 
-    </View>
+    </Pressable>
 
   );
 };

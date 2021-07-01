@@ -4,11 +4,13 @@
 import React from 'react';
 import {Pressable, Text, View} from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import {useNavigation} from '@react-navigation/native';
 
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const PostMessage = () => {
+    const navigation = useNavigation();
     return (
         <View
             style={{
@@ -46,11 +48,11 @@ const PostMessage = () => {
             </Text>
 
             <Pressable
-                onPress={()=>console.warn('learn more')}
+                onPress={()=>navigation.navigate('LearnMore')}
                 style={{
                     backgroundColor: 'white',
                     height: 40,
-                    width: 100,
+                    width: wp('40%'),
                     margin: 5,
                     marginLeft: 10,
                     alignItems: 'center',
@@ -58,11 +60,11 @@ const PostMessage = () => {
                     borderRadius: 10,
                 }}>
                     <Text
-                                        style={{
-                        marginHorizontal: 15,
-                        fontSize: 18,
-                        fontWeight: 'bold',
-                        color: 'black',
+                        style={{
+                            marginHorizontal: 15,
+                            fontSize: 18,
+                            fontWeight: 'bold',
+                            color: 'black',
                     }}>Learn More</Text>
 
             </Pressable>

@@ -30,7 +30,7 @@ const PostScreen = () => {
     return (
         <View
             style={{
-                backgroundColor: '#dedede',
+                backgroundColor: '#f7f7f7',
                 height: hp('100%'),
                 width: wp('100%'),
             }}>
@@ -49,7 +49,8 @@ const PostScreen = () => {
                         marginLeft: 10,
                         flexDirection: 'row',
                     }}>
-                    <Entypo name="menu" size={30} color={'#8e2525'} />
+                    <Entypo name="menu" size={30} color={'#8e2525'} onPress= {()=>navigation.navigate('HomeMenu')}
+/>
                 </View>
                 <View
                     style={{
@@ -97,7 +98,7 @@ const PostScreen = () => {
                                 backgroundColor: 'white',
                                 top: 0,
                                 borderRadius: 10,
-                                borderColor: '	#8a8a8a',
+                                borderColor: '#f0f8ff',
                             }}>
                             <View
                                 style={{

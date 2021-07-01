@@ -26,7 +26,6 @@ const HomeTabNavigator = (props) => {
                     ),
                 }}
             />
-
             <Tab.Screen
                 name={'Home'}
                 component={Home}
@@ -44,7 +43,6 @@ const HomeTabNavigator = (props) => {
                     tabBarIcon: ({color}) => (
                         <MaterialCommunityIcons name="post-outline" size={30} color={color} />
                     ),
-
                 }}
             />
 

@@ -56,20 +56,14 @@ export default class TravelHistory extends Component {
                         height: 45,
                         justifyContent: 'center',
                         alignItems: 'center',
+                        flexDirection: 'column',
                     }}>
                     <Text
                         style={{
                             fontSize: 14,
                         }}>
-                        Cancelled
+                        
                     </Text>
-                </View>
-                <View
-                    style={{
-                        height: 45,
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                    }}>
                     <Text
                         style={{
                             fontSize: 14,
@@ -77,6 +71,7 @@ export default class TravelHistory extends Component {
                         Earning
                     </Text>
                 </View>
+
                 <View
                     style={{
                         height: 45,
@@ -93,7 +88,7 @@ export default class TravelHistory extends Component {
                         style={{
                             fontSize: 20,
                         }}>
-                        ₱ 0.00
+                        ₱ 12770.00
                     </Text>
                 </View>
             </View>
