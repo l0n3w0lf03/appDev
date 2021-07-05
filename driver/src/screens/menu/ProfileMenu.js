@@ -35,6 +35,15 @@ const ProfileMenu = () => {
                         margin: 10,
                         backgroundColor: 'white',
                         borderRadius: 5,
+                        shadowColor: '#000',
+                        shadowOffset: {
+                            width: 0,
+                            height: 12,
+                        },
+                        shadowOpacity: 0.58,
+                        shadowRadius: 16.00,
+
+                        elevation: 24,
                     }}>
                     <View>
                     <Pressable
@@ -88,7 +97,7 @@ const ProfileMenu = () => {
                                         }}>
                                         Philip Philips
                                         <Pressable
-                                            onPress={()=>navigation.navigate('EditProfile')}>
+                                            onPress={()=>navigation.navigate('DriverProfile')}>
                                             <Text>
                                                 {'  '}<AntDesign name="edit" size={20} color={'#8e2525'}/>
                                             </Text>
@@ -126,7 +135,7 @@ const ProfileMenu = () => {
                                         color: '#3d3d3d',
                                         marginHorizontal: 5,
                                     }}>
-                                    <Entypo name="location-pin" size={20} color={'#c2c2c2'} />
+                                    <Entypo name="location-pin" size={20} color={'#00e000'} />
                                     Location
                                 </Text>
                             </View>
@@ -138,6 +147,15 @@ const ProfileMenu = () => {
                         backgroundColor: 'white',
                         margin: 10,
                         borderRadius: 5,
+                        shadowColor: '#000',
+                        shadowOffset: {
+                            width: 0,
+                            height: 12,
+                        },
+                        shadowOpacity: 0.58,
+                        shadowRadius: 16.00,
+
+                        elevation: 24,
                     }}>
                     <View
                         style={{
@@ -267,6 +285,15 @@ const ProfileMenu = () => {
                         height: hp('30%'),
                         flexDirection: 'column',
                         borderRadius: 5,
+                        shadowColor: '#000',
+                        shadowOffset: {
+                            width: 0,
+                            height: 12,
+                        },
+                        shadowOpacity: 0.58,
+                        shadowRadius: 16.00,
+
+                        elevation: 24,
                     }}>
                     <View
                         style={{
@@ -295,6 +322,15 @@ const ProfileMenu = () => {
                         height: hp('8%'),
                         flexDirection: 'column',
                         borderRadius: 5,
+                        shadowColor: '#000',
+                        shadowOffset: {
+                            width: 0,
+                            height: 12,
+                        },
+                        shadowOpacity: 0.58,
+                        shadowRadius: 16.00,
+
+                        elevation: 24,
                     }}>
                     <View
                         style={{

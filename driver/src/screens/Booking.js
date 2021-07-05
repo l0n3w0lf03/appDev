@@ -1,13 +1,14 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
-import React, {Component} from 'react';
+import React from 'react';
 import {Image, Pressable, Text, View} from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import {useNavigation} from '@react-navigation/native';
 
 import Entypo from 'react-native-vector-icons/Entypo';
 
-export class Booking extends Component {
-  render() {
+const Booking = () =>  {
+    const navigation = useNavigation();
     return (
       <View
         style={{
@@ -16,10 +17,10 @@ export class Booking extends Component {
           backgroundColor: '#f7f7f7',
         }}>
         <Pressable
-          onPress={()=>console.warn('clicked')}
+          onPress={()=>navigation.navigate('BookingDetails')}
           style={{
             width: wp('95%'),
-            height: hp('25%'),
+            height: hp('20%'),
             backgroundColor: 'white',
             borderRadius: 5,
             margin: 10,
@@ -35,17 +36,17 @@ export class Booking extends Component {
               }}>
               <Text
                 style={{
-                  fontSize: 20,
+                  fontSize: 18,
                 }}>
                 Toyota | BID A3R003162
               </Text>
               <Text
                 style={{
-                  fontSize: 16,
+                  fontSize: 14,
                   color: '#3d3d3d',
                   marginTop: 10,
                 }}>
-                <Entypo name="location-pin" size={16} color={'#00e000'} />
+                <Entypo name="location-pin" size={14} color={'#00e000'} />
                 {' '}286 Bañag, Daraga, Albay
               </Text>
               <View
@@ -59,14 +60,14 @@ export class Booking extends Component {
                   }}>
                   <Text
                     style={{
-                      fontSize: 18,
+                      fontSize: 14,
                       color: '#C0C0C0',
                     }}>
                     Trip Start
                   </Text>
                   <Text
                     style={{
-                      fontSize: 14,
+                      fontSize: 12,
                       marginTop: 5,
                       marginRight: 15,
                     }}>
@@ -79,14 +80,14 @@ export class Booking extends Component {
                   }}>
                   <Text
                     style={{
-                      fontSize: 18,
+                      fontSize: 14,
                       color: '#C0C0C0',
                     }}>
                     End
                   </Text>
                   <Text
                     style={{
-                      fontSize: 14,
+                      fontSize: 12,
                       marginTop: 5,
                       marginRight: 10,
                     }}>
@@ -100,17 +101,19 @@ export class Booking extends Component {
             style={{
               margin: 5,
               marginLeft: 10,
+              width: wp('25%'),
 
             }}>
             <View
               style={{
                 justifyContent: 'center',
+                width: wp('25%'),
               }}>
               <Image
                 style={{
                   resizeMode: 'center',
                   height: 80,
-                  width:100,
+                  width: wp('20%'),
                 }}
                 source={require('../assets/images/car.png')}
                 />
@@ -138,7 +141,6 @@ export class Booking extends Component {
         </Pressable>
       </View>
     );
-  }
 }
 
 export default Booking;

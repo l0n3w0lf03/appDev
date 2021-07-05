@@ -3,9 +3,12 @@
 import React, {Component} from 'react';
 import {Pressable, Text, View} from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import {useNavigation} from '@react-navigation/native';
 
-export class Help extends Component {
-  render() {
+const Help = () => {
+
+  const navigation = useNavigation();
+
     return (
       <View
         style={{
@@ -29,7 +32,7 @@ export class Help extends Component {
               marginTop: 10,
               marginLeft: 10,
             }}
-            onPress={()=>console.warn('faqs feedback')}>
+            onPress={()=>navigation.navigate('FAQ')}>
             <Text
               style={{
                 fontSize: 18,
@@ -43,7 +46,7 @@ export class Help extends Component {
               marginTop: 5,
               marginLeft: 10,
             }}
-              onPress={()=>console.warn('tutorials')}>
+              onPress={()=>navigation.navigate('Tutorials')}>
             <Text
               style={{
                 fontSize: 18,
@@ -54,24 +57,10 @@ export class Help extends Component {
           <Pressable
             style={{
               marginBottom: 5,
-              marginTop: 5,
-              marginLeft: 10,
-            }}
-              onPress={()=>console.warn('report incident')}>
-            <Text
-              style={{
-                fontSize: 18,
-              }}>
-              Report Incident
-            </Text>
-          </Pressable>
-          <Pressable
-            style={{
-              marginBottom: 5,
               marginTop: 10,
               marginLeft: 10,
             }}
-              onPress={()=>console.warn('terms of service')}>
+              onPress={()=>navigation.navigate('TermsOfService')}>
             <Text
               style={{
                 fontSize: 18,
@@ -82,7 +71,6 @@ export class Help extends Component {
         </View>
       </View>
     );
-  }
-}
+  };
 
 export default Help;

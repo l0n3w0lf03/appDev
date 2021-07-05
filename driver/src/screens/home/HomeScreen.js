@@ -285,7 +285,7 @@ const HomeScreen = (props) => {
                         <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#32cd32' }}>Connected</Text>
                     );
                 }
-                return (<Text style={{ fontSize: 22, fontWeight: 'bold', color: '#e0e0e0' }}>Not Connected</Text>);
+                return (<Text style={{ fontSize: 22, fontWeight: 'bold', color: 'black' }}>Not Connected</Text>);
 
             };
 
@@ -404,7 +404,7 @@ const HomeScreen = (props) => {
                     <View
                         style={{
                         position: 'absolute',
-                        backgroundColor: '#00000099',
+                        backgroundColor: 'white',
                         width: 230,
                         height: 100,
                         borderTopRightRadius: 100,

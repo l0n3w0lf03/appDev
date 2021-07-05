@@ -37,7 +37,7 @@ const HomeTabNavigator = (props) => {
                 }}
             />
             <Tab.Screen
-                name={'PostScreen'}
+                name={'Post'}
                 component={PostScreen}
                 options={{
                     tabBarIcon: ({color}) => (

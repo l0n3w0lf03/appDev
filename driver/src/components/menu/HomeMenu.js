@@ -9,6 +9,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Entypo from 'react-native-vector-icons/Entypo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const HomeMenu = () => {
 
@@ -23,7 +24,7 @@ const HomeMenu = () => {
         }}>
           <View
             style={{
-              height: hp('20%'),
+              height: hp('16%'),
               width: wp('95%'),
               backgroundColor: 'white',
               margin: 10,
@@ -32,6 +33,15 @@ const HomeMenu = () => {
               alignItems: 'center',
               justifyContent: 'center',
               borderRadius: 5,
+              shadowColor: '#000',
+              shadowOffset: {
+                width: 0,
+                height: 12,
+              },
+                shadowOpacity: 0.58,
+                shadowRadius: 16.00,
+
+                elevation: 24,
             }}>
             <Image
               style={{
@@ -58,6 +68,15 @@ const HomeMenu = () => {
               justifyContent: 'space-between',
               padding: 10,
               borderRadius: 5,
+              shadowColor: '#000',
+              shadowOffset: {
+                width: 0,
+                height: 12,
+              },
+                shadowOpacity: 0.58,
+                shadowRadius: 16.00,
+
+                elevation: 24,
 
             }}>
             <Pressable
@@ -121,6 +140,35 @@ const HomeMenu = () => {
                 </View>
                 <Pressable
                   onPress={()=>navigation.navigate('Booking')}>
+                  <Entypo name="chevron-right" size={24} color={'#3d3d3d'} />
+                </Pressable>
+              </View>
+            </Pressable>
+            <Pressable
+              onPress={()=>navigation.navigate('Payment')}>
+              <View
+                style={{
+                  justifyContent: 'space-between',
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                  }}>
+                  <FontAwesome name="credit-card-alt" size={20} color={'#8e2525'} style={{marginRight: 15}} />
+                  <Text
+                    style={{
+                      fontSize: 20,
+                      color: '#3d3d3d',
+                      marginRight: 5,
+                    }}>
+                    Payment
+                  </Text>
+                </View>
+                <Pressable
+                  onPress={()=>navigation.navigate('CarService')}>
                   <Entypo name="chevron-right" size={24} color={'#3d3d3d'} />
                 </Pressable>
               </View>
@@ -242,7 +290,7 @@ const HomeMenu = () => {
               </View>
             </Pressable>
             <Pressable
-              onPress={()=>navigation.navigate('LogOut')}>
+              onPress={()=>navigation.navigate('SignIn')}>
               <View
                 style={{
                   justifyContent: 'space-between',
@@ -265,7 +313,7 @@ const HomeMenu = () => {
                   </Text>
                 </View>
                 <Pressable
-                  onPress={()=>navigation.navigate('LogOut')}>
+                  onPress={()=>navigation.navigate('SignIn')}>
                   <Entypo name="chevron-right" size={24} color={'#3d3d3d'} />
                 </Pressable>
               </View>

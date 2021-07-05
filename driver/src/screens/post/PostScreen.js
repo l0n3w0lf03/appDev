@@ -43,6 +43,15 @@ const PostScreen = () => {
                     flexDirection: 'row',
                     alignItems: 'center',
                     justifyContent: 'space-between',
+                    shadowColor: '#000',
+                    shadowOffset: {
+                        width: 0,
+                        height: 12,
+                    },
+                        shadowOpacity: 0.58,
+                        shadowRadius: 16.00,
+
+                        elevation: 24,
                 }}>
                 <View
                     style={{
@@ -65,6 +74,15 @@ const PostScreen = () => {
                     height: 120,
                     backgroundColor: 'white',
                     borderRadius: 10,
+                    shadowColor: '#000',
+                    shadowOffset: {
+                        width: 0,
+                        height: 12,
+                    },
+                        shadowOpacity: 0.58,
+                        shadowRadius: 16.00,
+
+                        elevation: 24,
                 }}>
                 <PostMessage />
             </View>
@@ -212,6 +230,15 @@ const PostScreen = () => {
                     height: 320,
                     borderRadius: 10,
                     backgroundColor: 'white',
+                    shadowColor: '#000',
+                    shadowOffset: {
+                        width: 0,
+                        height: 12,
+                    },
+                        shadowOpacity: 0.58,
+                        shadowRadius: 16.00,
+
+                        elevation: 24,
                 }}>
                 <View
                     style={{

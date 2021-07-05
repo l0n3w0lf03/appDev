@@ -11,6 +11,7 @@ import React, {useEffect} from 'react';
 import Router from './src/router/Router';
 import {PermissionsAndroid, Platform} from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
+import SignIn from './src/screens/SignIn';
 
 navigator.geolocation = require('@react-native-community/geolocation');
 

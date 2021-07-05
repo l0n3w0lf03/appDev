@@ -65,7 +65,7 @@ const Post = () => {
             <Ionicons
                 name="md-chatbox-ellipses-outline"
                 size={24} color={'#8e2525'}
-                onPress={()=>console.warn('clicked')}
+                onPress={()=>navigation.navigate('Chat')}
                 style={{
                     marginHorizontal: 10,
                 }}
