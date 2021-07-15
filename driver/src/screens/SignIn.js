@@ -145,27 +145,6 @@ const SignIn = () => {
                 <View
                     style={{
                         justifyContent: 'center',
-                        marginTop: 20,
-                    }}>
-                    <Text
-                        style={{
-                            fontSize: 18,
-                        }}>
-                        Fingerprint Scan
-                    </Text>
-                    <FontAwesome5
-                        name="fingerprint"
-                        size={40}
-                        onPress={()=>console.warn('fingerprint')}
-                        style={{
-                            marginLeft: 50,
-                            marginTop: 10,
-                        }}
-                    />
-                </View>
-                <View
-                    style={{
-                        justifyContent: 'center',
                         alignItems: 'center',
                         margin: 10,
                     }}>
