@@ -26,6 +26,7 @@ import Chat from '../components/messages/Chat';
 import EditProfile from '../screens/profile/EditProfile';
 import SignIn from '../screens/SignIn';
 import SignUp from '../screens/SignUp';
+import GetStarted from '../screens/GetStarted';
 
 const Stack = createStackNavigator();
 
@@ -231,6 +232,13 @@ const Router = props => {
                     headerShown: true,
                     headerTitle: 'Chat',
                     headerTitleAlign: 'center',
+                }}
+            />
+        <Stack.Screen
+                name={'GetStarted'}
+                component={GetStarted}
+                options={{
+                    headerShown: false,
                 }}
             />
       </Stack.Navigator>
